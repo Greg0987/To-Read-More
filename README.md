@@ -51,12 +51,20 @@ Then you can see the resultls on `/outputs' and for more options, see opts.py.
 
 ## 2.2 NSC fine tuning
 After 2.1, please rename your outputs file to prepare reinforcement learning.
-`M9` -> 'M9_rl'
+
+`M9` -> `M9_rl`
+
 `infos_M9.pkl` -> `infos_M9_rl.pkl`
+
 `infos_M9-best.pkl` -> `infos_M9_rl-best.pkl`
 
 ```bash
-$ python tools/train.py --cfg configs/fc_rl.yml --id fc_rl
+$ python tools/train.py --cfg configs/DiM2T_rl.yml --id M9_rl
+```
+
+# 3 Evaluate on Karpathy's test split
+```bash
+$ python tools/eval.py --dump_images 0 --num_images 5000 --model model.pth --infos_path infos.pkl --language_eval 1 
 ```
 
 # Reference
