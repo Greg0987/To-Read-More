@@ -33,6 +33,7 @@ $ python preprocess/retrieve_tags.py
 Download from [link](https://www.dropbox.com/s/0h67c6ezwnderbd/oscar.hdf5) which is training on weaker Visual Genome offered from Xmodal-CTX.
 
 And then make sure all the files generated before are in `data/`.
+
 `cocotalk.json`
 `cocotalk_label.h5`
 `dataset_coco.json`
@@ -47,7 +48,7 @@ Set your model name like 'M9'.
 ```bash
 $ python tools/train.py --cfg configs/DiM2T.yml --id M9
 ```
-Then you can see the resultls on `/outputs' and for more options, see opts.py.
+Then you can see the resultls on `/outputs' and for more options, see `opts.py`.
 
 ## 2.2 NSC fine tuning
 After 2.1, please rename your outputs file to prepare reinforcement learning.
