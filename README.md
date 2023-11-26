@@ -1,8 +1,8 @@
 # To-Read-More
-The Code and Data of the paper To Read More
+The Code and Data of the paper To Read More.
 
-Coming soon...
-
+# 1. Preprocess data of MS-COCO
+Download preprocessed coco captions from [link](http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip) from Karpathy's homepage. Extract `dataset_coco.json` from the zip file and copy it in to `data/`. This file provides preprocessed captions and also standard train-val-test splits.
 
 # Reference
 This codebase is built upon the official implementation of the following. Consider citing their work if you find this repo useful.
