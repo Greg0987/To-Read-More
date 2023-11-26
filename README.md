@@ -67,7 +67,7 @@ $ python tools/train.py --cfg configs/DiM2T_rl.yml --id M9_rl
 ```bash
 $ python tools/eval.py --dump_images 0 --num_images 5000 --model model.pth --infos_path infos.pkl --language_eval 1 
 ```
-Then you can see the evaluation in `eval_results/`
+Then you can see the evaluation in `eval_results/`.
 
 # Reference
 This codebase is built upon the official implementation of the following. Consider citing their work if you find this repo useful.
