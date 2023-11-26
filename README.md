@@ -27,6 +27,18 @@ $ python preprocess/encode_captions.py
 $ python preprocess/retrieve_tags.py
 ```
 
+## 1.4 Download the object features
+Download from [link](https://www.dropbox.com/s/0h67c6ezwnderbd/oscar.hdf5).
+
+And then make sure all the files before are in `data/`
+`cocotalk.json`
+`cocotalk_label.h5`
+`dataset_coco.json`
+`img_grids.hdf5`
+`img_tags_top20.hdf5`
+`oscar.hdf5`
+`tags_to_calculate.hdf5`
+
 
 # Reference
 This codebase is built upon the official implementation of the following. Consider citing their work if you find this repo useful.
