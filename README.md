@@ -48,7 +48,7 @@ Set your model name like 'M9'.
 ```bash
 $ python tools/train.py --cfg configs/DiM2T.yml --id M9
 ```
-Then you can see the resultls on `/outputs' and for more options, see `opts.py`.
+Then you can see the resultls on `/outputs` and for more options, see `opts.py`.
 
 ## 2.2 NSC fine tuning
 After 2.1, please rename your outputs file to prepare reinforcement learning.
@@ -67,6 +67,7 @@ $ python tools/train.py --cfg configs/DiM2T_rl.yml --id M9_rl
 ```bash
 $ python tools/eval.py --dump_images 0 --num_images 5000 --model model.pth --infos_path infos.pkl --language_eval 1 
 ```
+Then you can see the evaluation in `eval_results/`
 
 # Reference
 This codebase is built upon the official implementation of the following. Consider citing their work if you find this repo useful.
