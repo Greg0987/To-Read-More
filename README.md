@@ -41,6 +41,23 @@ And then make sure all the files generated before are in `data/`.
 `oscar.hdf5`
 `tags_to_calculate.hdf5`
 
+# 2 Start training
+## 2.1 XE
+Set your model name like 'M9'.
+```bash
+$ python tools/train.py --cfg configs/DiM2T.yml --id M9
+```
+Then you can see the resultls on `/outputs' and for more options, see opts.py.
+
+## 2.2 NSC fine tuning
+After 2.1, please rename your outputs file to prepare reinforcement learning.
+`M9` -> 'M9_rl'
+`infos_M9.pkl` -> `infos_M9_rl.pkl`
+`infos_M9-best.pkl` -> `infos_M9_rl-best.pkl`
+
+```bash
+$ python tools/train.py --cfg configs/fc_rl.yml --id fc_rl
+```
 
 # Reference
 This codebase is built upon the official implementation of the following. Consider citing their work if you find this repo useful.
