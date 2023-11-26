@@ -12,6 +12,8 @@ $ python scripts/prepro_labels.py --input_json data/dataset_coco.json --output_j
 
 `prepro_labels.py` will map all words that occur <= 5 times to a special `UNK` token, and create a vocabulary for all the remaining words. The image information and vocabulary are dumped into `data/cocotalk.json` and discretized caption data are dumped into `data/cocotalk_label.h5`.
 
+Download the coco images from [link](http://mscoco.org/dataset/#download). We need 2014 training images and 2014 val. images. You should put the `train2014/` and `val2014/` in the same directory in `data/`.
+
 ## 1.1 Encode images
 ```bash
 $ python preprocess/encode_images.py
@@ -28,9 +30,9 @@ $ python preprocess/retrieve_tags.py
 ```
 
 ## 1.4 Download the object features
-Download from [link](https://www.dropbox.com/s/0h67c6ezwnderbd/oscar.hdf5).
+Download from [link](https://www.dropbox.com/s/0h67c6ezwnderbd/oscar.hdf5) which is training on weaker Visual Genome offered from Xmodal-CTX.
 
-And then make sure all the files before are in `data/`
+And then make sure all the files generated before are in `data/`.
 `cocotalk.json`
 `cocotalk_label.h5`
 `dataset_coco.json`
